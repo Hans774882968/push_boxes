@@ -217,7 +217,10 @@ $("body").keydown(function(event){
     if(event.keyCode == 39) suc = game.manMove(0,1,"Right");//r
     if(event.keyCode == 40) suc = game.manMove(1,0,"Down");//d
     if(suc) game.updateSteps(1);
-    if(suc === 3) $("#box-move")[0].play();
+    if(suc === 3){
+        $("#box-move")[0].currentTime = 0;
+        $("#box-move")[0].play();
+    }
     if(game.areWeWin()){
         alert("你赢了！恭喜！");
         gameEnd();
