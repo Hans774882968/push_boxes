@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    margin-top: 5%;
+    margin-left: 20%;
+    box-shadow: 0px 0px 5px #aaa;
+    padding: 10px;
+    width: max-content;
+}
+
+#choose{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px #aaa;
+    padding: 10px 30px;
+}
+
+.game-level{
+    margin: 10px;
+    padding: 12px 60px;
+    box-shadow: 0px 0px 5px #aaa;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#menu{
+    display: none;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+#menu .return,#menu .restart{
+    color: blue;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 5px #aaa;
+    border-radius: 10px;
+}
+
+#menu .steps{
+    color: blue;
+    padding: 5px 15px;
+}
+
+#game{
+    display: grid;
+}
+
+.cell{
+    background-size: cover;
+}
+
+@keyframes ManUp{
+    0%{
+        background-image: url(./images/ManUp1.jpg);
+    }
+    50%{
+        background-image: url(./images/ManUp2.jpg);
+    }
+    100%{
+        background-image: url(./images/ManUp1.jpg);
+    }
+}
+
+@keyframes ManRight{
+    0%{
+        background-image: url(./images/ManRight1.jpg);
+    }
+    50%{
+        background-image: url(./images/ManRight2.jpg);
+    }
+    100%{
+        background-image: url(./images/ManRight1.jpg);
+    }
+}
+
+@keyframes ManDown{
+    0%{
+        background-image: url(./images/ManDown1.jpg);
+    }
+    50%{
+        background-image: url(./images/ManDown2.jpg);
+    }
+    100%{
+        background-image: url(./images/ManDown1.jpg);
+    }
+}
+
+@keyframes ManLeft{
+    0%{
+        background-image: url(./images/ManLeft1.jpg);
+    }
+    50%{
+        background-image: url(./images/ManLeft2.jpg);
+    }
+    100%{
+        background-image: url(./images/ManLeft1.jpg);
+    }
+}

@@ -1,0 +1,32 @@
+﻿<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>推箱子</title>
+    <link rel="stylesheet" type="text/css" href = "./index.css" />
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <audio src="./audio/bgm.mp3" id="bgm" controls="controls" loop="loop" hidden="true">Your browser does not support the audio element.</audio>
+    <audio src="./audio/boxMove.WAV" id="box-move" controls="controls" hidden="true">Your browser does not support the audio element.</audio>
+    <div class = "wrap">
+        <div id = "choose">
+            <h2>选择关卡</h2>
+            <div class = "game-level">1</div>
+            <div class = "game-level">2</div>
+            <div class = "game-level">3</div>
+        </div>
+        <div id = "menu">
+            <div class = "return">←</div>
+            <div class = "restart">X</div>
+            <div class = "steps">步数：0</div>
+        </div>
+        <div id = "game"></div>
+    </div>
+    <div id = "output"></div>
+    <script>
+        function print(s){
+            document.getElementById("output").innerText += String(s) + "\n";
+        }
+    </script>
+    <script src = "./index.js"></script>
+</body>
