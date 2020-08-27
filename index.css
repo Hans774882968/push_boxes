@@ -38,16 +38,14 @@ a{
     padding-bottom: 10px;
 }
 
-#menu .return,#menu .restart{
+#menu div{
     color: blue;
     padding: 5px 15px;
-    box-shadow: 0px 0px 5px #aaa;
-    border-radius: 10px;
 }
 
-#menu .steps{
-    color: blue;
-    padding: 5px 15px;
+#menu .return,#menu .restart{
+    box-shadow: 0px 0px 5px #aaa;
+    border-radius: 10px;
 }
 
 #game{
